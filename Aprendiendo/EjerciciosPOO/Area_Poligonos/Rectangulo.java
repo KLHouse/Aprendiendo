@@ -11,9 +11,7 @@ public class Rectangulo extends Poligono {
 		this.lado1 = lado12;
 		this.lado2 = lado22;
 	}
-
 	
-
 	public double getLado1() {
 		return lado1;
 	}
