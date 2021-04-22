@@ -7,6 +7,8 @@ public class Mitarbeiter {
 	private String name;
 	private double gehalt;
 	private Date geboren;
+	//Date klasse
+	//new GregorianCalender(),getTime() beim aufrufen
 	
 	public Mitarbeiter(String name, double gehalt, Date geboren) {
 		super();
@@ -30,4 +32,4 @@ public class Mitarbeiter {
 	public Date getGeboren() {
 		return geboren;
 	}
-}
+}//ende Mitarbeiter
