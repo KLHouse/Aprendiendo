@@ -23,6 +23,7 @@ public class UI {
 	}
 
 	private void startMenu() {
+		
 		do {
 			System.out.println("Bitte einen Menüpunkt über die zu Beginn stehende Ziffer auswählen:");
 			System.out.println("1 - Produkliste anzeigen und einkaufen");

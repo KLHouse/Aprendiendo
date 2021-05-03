@@ -5,6 +5,9 @@
 	<classpathentry kind="src" path="POOteoria"/>
 	<classpathentry kind="src" path="Excepciones"/>
 	<classpathentry kind="src" path="Uni"/>
+	<classpathentry kind="src" path="Ejercicios"/>
+	<classpathentry kind="src" path="Buscaminas"/>
+	<classpathentry kind="src" path="Ventana"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
