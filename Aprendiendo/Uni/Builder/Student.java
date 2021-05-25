@@ -10,7 +10,7 @@ public class Student {
 	private final int MATRIKELNUMMER;
 	private final int STARTSEMESTER;
 
-	private LinkedList<PrÃ¼fungsergebnis> prÃ¼fungen;
+	private LinkedList<Prüfungsergebnis> prüfungen;
 
 	private Student(Builder bob) {
 		vorname = bob.vorname;
@@ -19,7 +19,7 @@ public class Student {
 		MATRIKELNUMMER = bob.matrikelnummer;
 		STARTSEMESTER = bob.startsemester;
 
-		prÃ¼fungen = new LinkedList<>();
+		prüfungen = new LinkedList<>();
 	}
 
 	// Instanzmethoden
@@ -37,7 +37,7 @@ public class Student {
 
 	public void setName(String name) {
 		if (name == null || "".contentEquals(name) || name.length() <= 1) {
-			throw new IllegalArgumentException("Leere Namen sind ungÃ¼ltig.");
+			throw new IllegalArgumentException("Leere Namen sind ungültig.");
 		}
 
 		this.name = name;
@@ -59,14 +59,14 @@ public class Student {
 		return MATRIKELNUMMER;
 	}
 
-	public void prÃ¼fungsergebnisHinzufÃ¼gen(PrÃ¼fungsergebnis pe) {
-		prÃ¼fungen.add(pe);
+	public void prüfungsergebnisHinzufügen(Prüfungsergebnis pe) {
+		prüfungen.add(pe);
 	}
 
-	public String getPrÃ¼fungsergebnisse() {
+	public String getPrüfungsergebnisse() {
 		StringBuilder sb = new StringBuilder();
 
-		for (PrÃ¼fungsergebnis pe : prÃ¼fungen)
+		for (Prüfungsergebnis pe : prüfungen)
 			sb.append(pe.toString() + System.lineSeparator());
 
 		return sb.toString();
@@ -76,7 +76,7 @@ public class Student {
 		double note = 0;
 		double gesamtEcts = 0;
 
-		for (PrÃ¼fungsergebnis pe : prÃ¼fungen) {
+		for (Prüfungsergebnis pe : prüfungen) {
 			note += pe.getNote() * pe.getEcts();
 			gesamtEcts += pe.getEcts();	
 		}

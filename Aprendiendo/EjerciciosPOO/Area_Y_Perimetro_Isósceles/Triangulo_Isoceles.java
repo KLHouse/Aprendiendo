@@ -1,4 +1,4 @@
-package Area_Y_Perimetro_Isósceles;
+package Area_Y_Perimetro_Is�sceles;
 
 /*Ejercicio 5: Diseñar un programa para trabajar con triángulos isósceles.
  *Para ello defina los atributos necesarios que se requieren, proporcione métodos de consulta,

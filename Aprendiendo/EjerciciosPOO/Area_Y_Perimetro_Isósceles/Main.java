@@ -1,4 +1,4 @@
-package Area_Y_Perimetro_IsÃ³sceles;
+package Area_Y_Perimetro_Isósceles;
 
 import java.util.Scanner;
 

@@ -11,7 +11,7 @@ public class UI {
 		/*Die UI ist eng and der Studiverwaltung gekoppelt*/
 	}
 
-	public void hauptmenÃ¼() {
+	public void hauptmenü() {
 		System.out.println("Herzlich willkommen zu SV 1.0");
 
 		schleife: do {
@@ -28,7 +28,7 @@ public class UI {
 				StudentenDatenAbfragen();
 				break;
 			case 3:
-				PrÃ¼fungsergbnisEintragen();
+				PrüfungsergebnisEintragen();
 				break;
 
 			case 4:
@@ -47,7 +47,7 @@ public class UI {
 		
 	}// hauptmenÃ¼ ende
 
-	private void PrÃ¼fungsergbnisEintragen() {
+	private void PrüfungsergebnisEintragen() {
 		System.out.println("PrÃ¼fungsergebnis eintragen");
 
 		System.out.print("Matrikelnummer: ");
@@ -62,7 +62,7 @@ public class UI {
 		System.out.print("Note: ");
 		double note = Double.parseDouble(sc.nextLine());
 		
-		System.out.println(sv.prÃ¼fungsErgebnisEintragen(matrikelnummer, pName, ects, note));
+		System.out.println(sv.prüfungsErgebnisEintragen(matrikelnummer, pName, ects, note));
 	}
 
 	private void StudentenDatenAbfragen() {
@@ -97,5 +97,7 @@ public class UI {
 
 		System.out.println("Student abgespeichert" + s.toString());
 	}
+
+
 
 }

@@ -31,13 +31,13 @@ public class Studiverwaltung {
 	}
 	
 	
-	public String prÃ¼fungsErgebnisEintragen(int matrikelnummer, String pName, int ects, double note) {
-		PrÃ¼fungsergebnis pe = new PrÃ¼fungsergebnis(pName, ects, note);
+	public String prüfungsErgebnisEintragen(int matrikelnummer, String pName, int ects, double note) {
+		Prüfungsergebnis pe = new Prüfungsergebnis(pName, ects, note);
 		
 		Student s = this.studentenDatenAbfragen(matrikelnummer);
-		s.prÃ¼fungsergebnisHinzufÃ¼gen(pe);
+		s.prüfungsergebnisHinzufügen(pe);
 		
-		return s.getPrÃ¼fungsergebnisse();
+		return s.getPrüfungsergebnisse();
 		
 	}
 

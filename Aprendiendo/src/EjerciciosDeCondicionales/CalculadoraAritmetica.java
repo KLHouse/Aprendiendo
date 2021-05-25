@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  *  del primer parámetro de la línea de comandos: S o s para la suma,
  *  R o r para la resta, P, p, M o m para el producto y D o d para la división.
  * */
-public class CalculadoraAritmética {
+public class CalculadoraAritmetica {
 
 	public static void main(String[] args) {
 

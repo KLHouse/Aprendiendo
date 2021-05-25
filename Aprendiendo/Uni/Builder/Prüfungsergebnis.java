@@ -1,11 +1,11 @@
 package Builder;
 
-public class PrÃ¼fungsergebnis {
+public class Prüfungsergebnis {
 
 	private final String PNAME;
 	private final int ECTS;
 	private final double NOTE;
-	public PrÃ¼fungsergebnis(String pName, int ects, double note) {
+	public Prüfungsergebnis(String pName, int ects, double note) {
 		super();
 		PNAME = pName;
 		ECTS = ects;
