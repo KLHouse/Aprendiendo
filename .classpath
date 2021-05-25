@@ -8,7 +8,5 @@
 	<classpathentry kind="src" path="Aprendiendo/src"/>
 	<classpathentry kind="src" path="Aprendiendo/Uni"/>
 	<classpathentry kind="src" path="Aprendiendo/Ventana"/>
-	<classpathentry kind="src" path="Akte"/>
-	<classpathentry kind="src" path="Csv"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
