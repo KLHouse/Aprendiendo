@@ -1,4 +1,4 @@
-package Area_Y_Perimetro_Isósceles;
+package Area_Y_Perimetro_IsÃ³sceles;
 
 import java.util.Scanner;
 
@@ -21,6 +21,8 @@ public class Main {
 		
 		System.out.println(triangulo1.calcularArea());
 		System.out.println(triangulo1.calcularPerimetro());
+
+		sc.close();
 		
 		
 	}

@@ -38,6 +38,7 @@ public class Arreglo_En_Forma_Creciente_O_decreciente {
 		}else if(caso1 == false && caso2 == false) {
 			System.out.println("Todos son iguales");
 		}
+		sc.close();
 
 	}
 

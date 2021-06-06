@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class UI {
 	Scanner sc = new Scanner(System.in);
 	private int saldoActual;
-	private int retiro;
-	private int deposito;
+
 
 	public void menu(Cajero b) {
 

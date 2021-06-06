@@ -25,8 +25,7 @@ public class Main {
 		
 		
 		Persona persona1 = new Persona(nombre, edad, generarDNI(), sexo, peso, altura);
-		Persona persona2 = new Persona(nombre, edad, generarDNI(), sexo);
-		Persona persona3 = new Persona();
+	
 		
 		persona1.calcularIMC();
 		persona1.esMayorDeEdad();
@@ -34,6 +33,7 @@ public class Main {
 			System.out.println("Usted es mayor de edad");
 		}
 		System.out.println(persona1.toString());
+		sc.close();
 	}
 	public static int generarDNI() {
 		Random ram = new Random(System.nanoTime());

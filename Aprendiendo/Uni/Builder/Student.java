@@ -2,7 +2,7 @@ package Builder;
 
 import java.util.LinkedList;
 
-public class Student {
+public class Student<PrÃ¼fungsergebnis> {
 
 	// Instanzvariablen
 	private String vorname;
@@ -10,7 +10,7 @@ public class Student {
 	private final int MATRIKELNUMMER;
 	private final int STARTSEMESTER;
 
-	private LinkedList<Prüfungsergebnis> prüfungen;
+	private LinkedList<PrÃ¼fungsergebnis> prÃ¼fungen;
 
 	private Student(Builder bob) {
 		vorname = bob.vorname;
@@ -19,7 +19,7 @@ public class Student {
 		MATRIKELNUMMER = bob.matrikelnummer;
 		STARTSEMESTER = bob.startsemester;
 
-		prüfungen = new LinkedList<>();
+		prÃ¼fungen = new LinkedList<>();
 	}
 
 	// Instanzmethoden
@@ -37,7 +37,7 @@ public class Student {
 
 	public void setName(String name) {
 		if (name == null || "".contentEquals(name) || name.length() <= 1) {
-			throw new IllegalArgumentException("Leere Namen sind ungültig.");
+			throw new IllegalArgumentException("Leere Namen sind ungï¿½ltig.");
 		}
 
 		this.name = name;
@@ -59,14 +59,14 @@ public class Student {
 		return MATRIKELNUMMER;
 	}
 
-	public void prüfungsergebnisHinzufügen(Prüfungsergebnis pe) {
-		prüfungen.add(pe);
+	public void prÃ¼fungsergebnisHinzufÃ¼gen(PrÃ¼fungsergebnis pe) {
+		prÃ¼fungen.add(pe);
 	}
 
-	public String getPrüfungsergebnisse() {
+	public String getPrÃ¼fungsergebnisse() {
 		StringBuilder sb = new StringBuilder();
 
-		for (Prüfungsergebnis pe : prüfungen)
+		for (PrÃ¼fungsergebnis pe : prÃ¼fungen)
 			sb.append(pe.toString() + System.lineSeparator());
 
 		return sb.toString();
@@ -76,7 +76,7 @@ public class Student {
 		double note = 0;
 		double gesamtEcts = 0;
 
-		for (Prüfungsergebnis pe : prüfungen) {
+		for (PrÃ¼fungsergebnis pe : prÃ¼fungen) {
 			note += pe.getNote() * pe.getEcts();
 			gesamtEcts += pe.getEcts();	
 		}

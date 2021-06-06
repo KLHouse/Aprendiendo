@@ -52,6 +52,7 @@ public class OrdenarNumeros {
 			
 			System.out.println("El orden es: "+numeroMayor+" "+numeroDeMedio+" "+numeroMenor);
 		}
+		entrada.close();
 	}
 
 }

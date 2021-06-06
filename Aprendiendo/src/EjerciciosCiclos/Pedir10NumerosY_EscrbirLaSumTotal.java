@@ -15,6 +15,7 @@ public class Pedir10NumerosY_EscrbirLaSumTotal {
 			suma+=numero;
 		}
 		System.out.println("La suma de los numeros ingresados es de: "+suma );
+		sc.close();
 	}
 
 }

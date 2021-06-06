@@ -21,6 +21,7 @@ public class Main {
 		int cantidadVehiculos = sc.nextInt();
 		
 		Vehiculo[] vehiculos = new Vehiculo[cantidadVehiculos];//Aqui creamos la cantidad de vehiculos que el usuario quiere
+		sc.close();
 		
 		for (int i = 0; i < cantidadVehiculos; i++) {
 			sc.nextLine();
@@ -60,5 +61,6 @@ public class Main {
 		return indice;
 		
 	}
+	
 
 }

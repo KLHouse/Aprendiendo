@@ -1,9 +1,8 @@
 package OnlineShop.Fassade;
 
-import java.io.File;
+
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Scanner;
+
 
 import OnlineShop.Domain.Cart;
 import OnlineShop.Domain.Product;

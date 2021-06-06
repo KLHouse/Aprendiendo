@@ -22,6 +22,7 @@ public class LeerNumeroIndicarSiPositivoONegativo {
 					numero = sc.nextInt();
 				}
 			}
+			sc.close();
 		}else {
 			System.out.println("Ha introducido un cero");
 		}

@@ -52,6 +52,8 @@ public class TicTaeToe {
 				break;
 			}
 			System.out.println(result);
+
+			sc.close();
 		}
 
 	}

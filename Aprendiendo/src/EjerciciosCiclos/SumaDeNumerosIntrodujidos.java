@@ -24,6 +24,8 @@ public class SumaDeNumerosIntrodujidos {
 		
 		System.out.println("La suma de los numeros digitados es: "+suma);
 
+		sc.close();
 	}
+
 
 }

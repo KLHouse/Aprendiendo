@@ -13,6 +13,7 @@ public class Main {
 		
 		UI a = new UI();
 		a.menu(b);
+		sc.close();
 	}
 
 }

@@ -25,7 +25,7 @@ public class ClaseMath {
 		
 		//numero random
 		double numero2 = Math.random(); 
-		
+		entrada.close();
 	}
 
 }

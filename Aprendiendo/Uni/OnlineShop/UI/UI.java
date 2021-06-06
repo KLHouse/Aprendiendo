@@ -1,6 +1,5 @@
 package OnlineShop.UI;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import OnlineShop.Domain.Product;

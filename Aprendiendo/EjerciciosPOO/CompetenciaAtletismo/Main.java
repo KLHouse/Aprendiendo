@@ -36,6 +36,7 @@ public class Main {
 		indice = atletaMasRapido(atletas);
 		System.out.println("El corredor mas rapido fue:");
 		System.out.println(atletas[indice].getNombreAtleta());
+		sc.close();
 
 	}
 
@@ -54,5 +55,6 @@ public class Main {
 		return indice;
 
 	}
+	
 
 }

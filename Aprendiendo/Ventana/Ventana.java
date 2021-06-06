@@ -1,5 +1,4 @@
-import java.awt.Color;
-import java.awt.Font;
+
 import java.awt.Image;
 
 import javax.swing.ImageIcon;
@@ -7,7 +6,6 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.SwingConstants;
 
 public class Ventana extends JFrame {
 
@@ -35,7 +33,7 @@ public class Ventana extends JFrame {
 
 	private void iniciarComponentes() {
 		crearPanel();
-//		colocarEtiquetas();
+		// colocarEtiquetas();
 		colocarBotones();
 	}
 
@@ -56,30 +54,33 @@ public class Ventana extends JFrame {
 
 		panel.setLayout(null);// estamos desactivando el diseöo del panel para poner la etiqueta en cualquier
 								// lugar ya que el panel tiene un disenöo por defecto
-//		panel.setBackground(Color.GREEN);//Establecemos el color del panel
+		// panel.setBackground(Color.GREEN);//Establecemos el color del panel
 
 		this.getContentPane().add(panel);// Agregamos el panel a la ventana
 	}
 
 	private void colocarEtiquetas() {
 
-//		//Creamos etiquetas con JLabel
-//		JLabel etiqueta = new JLabel("Hola", SwingConstants.CENTER );//Creamos una etiqueta, establecemos la alineaion horizontal del texto
-//		//alternativa etiqueta.setText("hola");
-//		//alternativa etiqueta.setHorizontalAlignment(SwingConstants.Right);//
-//		
-//		etiqueta.setBounds(20, 20, 100, 60);
-//		etiqueta.setForeground(Color.blue);//establecemos el color a la letra
-//		etiqueta.setOpaque(true);//establecemos pintar el fondo de la etiqueta
-//		etiqueta.setBackground(Color.black);//cambiamos el color del fondo de la etiqueta
-//		etiqueta.setFont(new Font("Arial", Font.BOLD, 30));//establecemos la fuente del text
-//		panel.add(etiqueta);//Agregamos la etiqueta sobre el panel
-//		
+		// //Creamos etiquetas con JLabel
+		// JLabel etiqueta = new JLabel("Hola", SwingConstants.CENTER );//Creamos una
+		// etiqueta, establecemos la alineaion horizontal del texto
+		// //alternativa etiqueta.setText("hola");
+		// //alternativa etiqueta.setHorizontalAlignment(SwingConstants.Right);//
+		//
+		// etiqueta.setBounds(20, 20, 100, 60);
+		// etiqueta.setForeground(Color.blue);//establecemos el color a la letra
+		// etiqueta.setOpaque(true);//establecemos pintar el fondo de la etiqueta
+		// etiqueta.setBackground(Color.black);//cambiamos el color del fondo de la
+		// etiqueta
+		// etiqueta.setFont(new Font("Arial", Font.BOLD, 30));//establecemos la fuente
+		// del text
+		// panel.add(etiqueta);//Agregamos la etiqueta sobre el panel
+		//
 		// etiqueta 2. etiqueta tipo imagen
 		ImageIcon imagen = new ImageIcon("mm.jpg");
 		JLabel etiqueta2 = new JLabel(); // poner una imagen
 
-//		etiqueta2.setIcon(image);
+		// etiqueta2.setIcon(image);
 		etiqueta2.setBounds(80, 80, 300, 300);
 		etiqueta2.setIcon(new ImageIcon(
 				imagen.getImage().getScaledInstance(etiqueta2.getWidth(), etiqueta2.getHeight(), Image.SCALE_SMOOTH)));

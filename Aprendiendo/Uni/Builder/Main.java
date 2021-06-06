@@ -7,7 +7,7 @@ public class Main {
 		Studiverwaltung sv = new Studiverwaltung();
 		
 		UI ui = new UI(sv);
-		ui.hauptmenü();
+		ui.hauptmenÃ¼();
 	
 	}
 

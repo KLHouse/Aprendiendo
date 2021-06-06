@@ -40,7 +40,7 @@ public class Main {
  
         System.out.println("Espectadores generados: ");
         //Termino cuando no queden espectadores o no haya mas sitio en el cine
-        boolean amp;
+       
 		for (int i = 0; i < numEspectadores &&  cine.haySitio(); i++) {
  
             //Generamos un espectador
@@ -74,6 +74,7 @@ public class Main {
          
         System.out.println("Fin");
  
+      sn.close();
     }
  
 }

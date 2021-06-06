@@ -34,6 +34,7 @@ public class Mayor_Menor_Valor_Arreglo {
 		}
 		System.out.println("El mayor valor es: "+mayor);
 		System.out.println("El menor valor es: "+menor);
+		sc.close();
 	}
 
 }
